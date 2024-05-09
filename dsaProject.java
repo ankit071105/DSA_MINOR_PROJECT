@@ -64,8 +64,9 @@ class Member {
     }
 
     public boolean isTeamB() {
-        return (team.equals("TeamB"));
+        return (team != null && team.equals("TeamB"));
     }
+    
 
     public boolean joinedBefore(Date date) {
         return joinDate.toString().compareTo(date.toString()) < 0;
